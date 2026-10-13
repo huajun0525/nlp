@@ -1,0 +1,8 @@
+datasets
+jieba
+pandas
+scikit-learn
+tensorboard
+torch
+tqdm
+transformers

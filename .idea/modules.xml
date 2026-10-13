@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hugging-face/hugging-face.iml" filepath="$PROJECT_DIR$/hugging-face/hugging-face.iml" />
+      <module fileurl="file://$PROJECT_DIR$/input-method-rnn/input-method-rnn.iml" filepath="$PROJECT_DIR$/input-method-rnn/input-method-rnn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review-analyze-bert/review-analyze-bert.iml" filepath="$PROJECT_DIR$/review-analyze-bert/review-analyze-bert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review-analyze-gru/review-analyze-gru.iml" filepath="$PROJECT_DIR$/review-analyze-gru/review-analyze-gru.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review-analyze-lstm/review-analyze-lstm.iml" filepath="$PROJECT_DIR$/review-analyze-lstm/review-analyze-lstm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review-analyze-rnn/review-analyze-rnn.iml" filepath="$PROJECT_DIR$/review-analyze-rnn/review-analyze-rnn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-scaled-attention/test-scaled-attention.iml" filepath="$PROJECT_DIR$/test-scaled-attention/test-scaled-attention.iml" />
+      <module fileurl="file://$PROJECT_DIR$/text_rep/text_rep.iml" filepath="$PROJECT_DIR$/text_rep/text_rep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transformer/transformer.iml" filepath="$PROJECT_DIR$/transformer/transformer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/translation-attention/translation-attention.iml" filepath="$PROJECT_DIR$/translation-attention/translation-attention.iml" />
+      <module fileurl="file://$PROJECT_DIR$/translation-seq2seq/translation-seq2seq.iml" filepath="$PROJECT_DIR$/translation-seq2seq/translation-seq2seq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/translation-transformer/translation-transformer.iml" filepath="$PROJECT_DIR$/translation-transformer/translation-transformer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/代码.iml" filepath="$PROJECT_DIR$/.idea/代码.iml" />
+    </modules>
+  </component>
+</project>

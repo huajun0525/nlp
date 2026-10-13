@@ -1,0 +1,6 @@
+nltk
+pandas
+scikit-learn
+tensorboard
+torch
+tqdm

@@ -1,0 +1,25 @@
+# Python 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# Python 编译缓存
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 训练日志与 TensorBoard
+logs/
+*.tfevents.*
+
+# PyCharm 用户特定配置
+.idea/workspace.xml
+.idea/**/workspace.xml
+.jbeval/
+
+# 超出 GitHub 100MB 单文件限制的权重与数据文件
+*.safetensors
+*.bz2
+review-analyze-bert/models/best.pt

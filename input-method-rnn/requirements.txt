@@ -1,0 +1,6 @@
+jieba
+pandas
+scikit-learn
+tensorboard
+torch
+tqdm
