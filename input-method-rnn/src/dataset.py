@@ -32,6 +32,7 @@ if __name__ == '__main__':
     print(len(test_dataloader))
 
     for input_tensor, target_tensor in train_dataloader:
-        print(input_tensor.shape)  # input_tensor.shape: [batch_size, seq_len]
+        print(input_tensor.shape)
+        print("llll")# input_tensor.shape: [batch_size, seq_len]
         print(target_tensor.shape)  # target_tensor.shape : [batch_size]
         break
