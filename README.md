@@ -44,15 +44,25 @@ pip install -r requirements.txt
    
 2. **模型训练 (`train.py`)**
    * **命令**：`python src/train.py`
-   * **作用**：读取处理后的 jsonl 训练集，构建 RNN 模型开展时序训练。每个 Epoch 自动打印 Loss，并自动在 Tensorboard 和日志中记录训练状态。最终，会在 `models/` 下生成最佳模型参数文件 `best.pt`。
-   
-3. **模型评估 (`evaluate.py`)**
+   * **作用**：读取处理后的 jsonl 训练集，构建模型开展时序训练。每个 Epoch 自动打印 Loss，并自动在 TensorBoard 日志中记录训练状态。最终，会在 `models/` 下生成最佳模型参数文件（`best.pt` 或 `best.pth`）。
+
+3. **启动 TensorBoard 可视化训练监控 (`http://localhost:6006/`)**
+   * **说明**：`train.py` 仅负责把标量指标写入 `logs/` 磁盘目录，它本身不启动 Web 服务。若需在浏览器查看 Loss 变化折线图，需单独启动 TensorBoard 服务进程。
+   * **启动命令**（在子项目终端执行）：
+     ```powershell
+     .\.venv\Scripts\python.exe -m tensorboard.main --logdir logs
+     ```
+   * **浏览器访问**：
+     终端提示启动成功后，直接打开浏览器访问 👉 **`http://localhost:6006/`**
+     *(注：训练期间保持该终端运行，按 `Ctrl + C` 可退出 Web 服务)*。
+
+4. **模型评估 (`evaluate.py`)**
    * **命令**：`python src/evaluate.py`
-   * **作用**：加载训练好的 `best.pt` 权重文件，在测试集上验证模型的 Accuracy (准确率) 表现。
+   * **作用**：加载训练好的权重文件，在测试集上验证模型的 Accuracy (准确率) 或 BLEU 分数。
    
-4. **交互式预测推理 (`predict.py`)**
+5. **交互式预测推理 (`predict.py`)**
    * **命令**：`python src/predict.py`
-   * **作用**：开启一个实时互动的终端情感预测器。您可以在控制台输入任意评价内容（如“物流很快，质量不错，满分！”），模型将当场输出情感分类（正向/负向）和置信度。输入 `q` 或 `quit` 即可退出。
+   * **作用**：开启一个实时互动的终端预测器。您可以在控制台输入文本，模型将当场输出预测分类、候选词或翻译结果。输入 `q` 或 `quit` 即可退出。
 
 ---
 
